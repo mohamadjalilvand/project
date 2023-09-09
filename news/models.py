@@ -13,6 +13,7 @@ class News(models.Model):
     body= models.TextField()
     date= models.CharField(max_length=12)
     writer= models.TextField()
+    
 
 
     def __str__(self):
