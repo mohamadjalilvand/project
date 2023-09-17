@@ -491,7 +491,7 @@
    {% for i in news %}
    <div class="col-md-3">
       <div class="post-box">
-         <a href="#">
+         <a href="{% url 'news_detial' word=i.name %}">
             <figure>
                <img src="{%static 'front/'%}img/290667058azer news.jpg" alt="">
                <figcaption class="meta-fig">
@@ -511,7 +511,7 @@
                </p>
                <div class="text-rigt">
                   <p> {{i.writer}}</p>
-         <a href="#">ادامه ...</a></div>
+         <a href="{% url 'news_detial' word=i.name %}">ادامه ...</a></div>
          </div>
          </a>
       </div>

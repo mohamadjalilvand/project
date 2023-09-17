@@ -7,6 +7,6 @@ from . import views
 
 
 urlpatterns = [
-    path('news/(<word>.*)/',views.news_detial,name='news_detial' ),
+    path('news/<word>/',views.news_detial,name='news_detial'),
 
 ]
