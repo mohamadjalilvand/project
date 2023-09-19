@@ -22,3 +22,6 @@ def about(request):
     return render(request ,'front/about.html', {'sitename': site})
 
 
+def panel(request):
+
+    return render(request , 'back/home.html')
