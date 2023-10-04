@@ -1,0 +1,82 @@
+{% extends 'back/master.html' %}
+
+{% load static %}
+{% block mainblock %}
+
+
+    <div class="row mt-3">
+      <div class="col-lg-12">
+         <div class="card">
+           <div class="card-body">
+           <div class="card-title"> ثبت خبر </div>
+           <hr>
+            <form action="{% url 'form' %}" method="post" enctype="multipart/from-data" >
+             {% csrf_token %}
+           <div class="form-group">
+            <label for="input-1"> نویسنده </label>
+            <input type="text" class="form-control" id="writer" name="writer"  placeholder="">
+           </div>
+           <div class="form-group">
+            <label for="input-2"> تیتر خبر </label>
+            <input type="text" class="form-control" id="newstitle" name="newstitle" placeholder="">
+           </div>
+           <div class="form-group">
+            <label for="input-3"> متن خبر </label>
+            <input type="text" class="form-control" id="newstxt" name="newstxt" placeholder="">
+           </div>
+           <div class="form-group">
+            <label for="input-4"> تاریخ </label>
+            <input type="text" class="form-control" id="newsdate" name="newsdate" placeholder="">
+           </div>
+           <div class="form-group">
+            <label for="input-5"> عکس خبر </label>
+            <input type="file" class="form-control" id="newsimage" name="newsimage">
+           </div>
+           <div class="form-group">
+            <label for="input-6"> دسته بندی </label>
+              <select name="cat" class="custom-select mb-3"id="newscatagory" >
+                <option selected> انتخاب دسته بندی </option>
+                <option value="cat1"> cat 1 </option>
+                <option value="car2"> cat 2 </option>
+                <option value="cat3"> cat 3 </option>
+                <option value="cat4"> cat 4 </option>
+                <option value="cat5"> cat 5 </option>
+              </select> 
+          </div>
+          
+          </body>
+          </html>
+          
+           <!-- Default dropup button -->
+           <div class="form-group py-2">
+           
+           </div>
+           <div class="form-group">
+            <button type="submit" class="btn btn-light px-5"><i class="zmdi zmdi-edit"></i> ثبت </button>
+          </div>
+          </form>
+         </div>
+         </div>
+      </div>
+
+     
+
+{% endblock mainblock %}
+
+{% block footerblock %}
+
+<!-- Bootstrap core JavaScript-->
+<script src="{%static 'back/'%}assets/js/jquery.min.js"></script>
+<script src="{%static 'back/'%}assets/js/popper.min.js"></script>
+<script src="{%static 'back/'%}assets/js/bootstrap.min.js"></script>
+
+<!-- simplebar js -->
+<script src="{%static 'back/'%}assets/plugins/simplebar/js/simplebar.js"></script>
+<!-- sidebar-menu js -->
+<script src="{%static 'back/'%}assets/js/sidebar-menu.js"></script>
+
+<!-- Custom scripts -->
+<script src="{%static 'back/'%}assets/js/app-script.js"></script>
+
+
+{% endblock %}

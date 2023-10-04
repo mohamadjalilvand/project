@@ -13,7 +13,10 @@ class News(models.Model):
     body= models.TextField()
     date= models.CharField(max_length=12)
     writer= models.TextField()
-    
+    image= models.TextField()
+    catagory= models.TextField()
+    catid= models.IntegerField(default=0)
+    show= models.IntegerField(default=0)
 
 
     def __str__(self):

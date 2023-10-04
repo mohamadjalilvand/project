@@ -61,20 +61,14 @@
       </li>
       
       <li>
-        <a href="forms.html">
-          <i class="zmdi zmdi-format-list-bulleted"></i> <span> فرم ها  </span>
+        <a href="/panel/news/form">
+          <i class="zmdi zmdi-edit"></i> <span>  ثبت خبر  </span>
         </a>
       </li>
 
       <li>
-        <a href="tables.html">
-          <i class="zmdi zmdi-grid"></i> <span>  صفحات  </span>
-        </a>
-      </li>
-
-      <li>
-        <a href="profile.html">
-          <i class="zmdi zmdi-face"></i> <span> پروفایل </span>
+        <a href="/panel/news/profile">
+          <i class="zmdi zmdi-account"></i> <span> پروفایل </span>
         </a>
       </li>
 
@@ -85,7 +79,7 @@
       </li>
       <li>
         <a href="register.html" target="_blank">
-          <i class="zmdi zmdi-account-circle"></i> <span> ثبت مدیریت جدید </span>
+          <i class="zmdi zmdi-account-add"></i> <span> ثبت مدیریت جدید </span>
         </a>
       </li>
 
@@ -248,7 +242,11 @@
  
   <!-- Index js -->
   <script src="{%static 'back/'%}assets/js/index.js"></script>
+  {% block footerblock %}
+  {% endblock %}
 
+  {% block fotblock %}
+  {% endblock %}
   
 </body>
 </html>

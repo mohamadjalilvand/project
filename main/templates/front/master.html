@@ -6,9 +6,7 @@
 
       {% block headblock %}
       {% endblock %}
-      
-
-      
+      <link rel="icon" type="image/png" href="{%static 'back/'%}assets/images/logo-icon.png"/>
       <link rel="stylesheet" href="{%static 'front/'%}css/bootstrap.css">
       <link rel="stylesheet" href="{%static 'front/'%}css/font-awesome.min.css">
       <link rel="stylesheet" href="{%static 'front/'%}css/owl.carousel.css">
@@ -31,6 +29,7 @@
                            <li><a href="#">تماس با ما</a></li>
                            <li><a href="/about">درباره ما</a></li>
                            <li><a href="#">مقالات</a></li>
+                           <li><a href="{% url 'panel' %}"> مدیریت </a></li>
                         </ul>
                      </div>
                   </div>
